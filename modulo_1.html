@@ -1,0 +1,84 @@
+<html>
+    <head>
+            <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">>
+            <title>Curso JS Rocketseat</title>
+    </head>
+    <body>
+        
+        <script>   
+
+        // Desafio 1
+            var endereço = {
+                rua: "Rua dos pinheiros",
+                n: 123, 
+                bairro: 'Centro',
+                cidade: 'São Paulo',
+                uf: 'SP'
+            };
+            //printEnd(endereço);
+            function printEnd (endereço){
+                if (endereço.constructor === Object){
+                    console.log('O usuário mora em '+ endereço.cidade + '/' + endereço.uf + ' no bairro ' + endereço.bairro + ', na rua \"'+endereço.rua+"\" com nº "+endereço.n);
+                    
+                }
+            }
+
+        //Desafio 2
+            //pares(40, 60);
+            function pares(x, y) {
+                let z = Math.max(x, y);
+                x = Math.min(x,y);
+                y = z;
+                for (let i = x;  i<=y; i++){
+                    i%2==0?console.log(i):i;
+                }                
+            }
+            
+            //Desafio 3
+            var skills = ["Javascript", 'ReactJS', 'React Native'];
+            
+            //console.log(skills.some(temHabilidade));
+            function temHabilidade(element){
+                return element == 'Javascript';
+            }
+            
+            //Desafio 4
+            function experiencia(anos){
+                switch (true) {
+                    case (anos <= 1):
+                        console.log('Iniciante');
+                        break;
+                    case (anos <= 3):
+                        console.log('Intermediário');
+                        break;
+                    case (anos <= 6):
+                        console.log('Avançado');
+                        break;
+                    case (anos >=7): 
+                        console.log('Jedi Master');
+                        break;
+                }
+            }
+            var anosEstudo = 6;
+            
+            //experiencia(anosEstudo);
+            
+            
+            
+            
+            //Desafio 5
+            var usuarios = [  
+                {nome: "Diego", habilidades: ["Javascript", "ReactJS", "Redux"]},  
+                {nome: "Gabriel", habilidades: ["VueJS", "Ruby on Rails", "Elixir"]}
+            ];
+            
+            usuarios.forEach( (usuario) => 
+                { 
+                console.log("O "+usuario.nome+" possui as habilidades: "+usuario.habilidades.join(", "));
+                })
+            
+            
+            
+        </script>
+    </body>
+</html>
