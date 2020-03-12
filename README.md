@@ -1,7 +1,5 @@
-# DOMinateJS
-I shall make this fucking piece of garbage language MINE. Will consume all of JS classes. 
+# DOMinate JS [DON'T JUDGE, I'M LEARNING XD]
 
+Repository for learning all JS that I can (including node.js).
 
-Starting now with Rocketseat. Then, MidiaNinja.
-
-Then, back to fucking Rocketseat. 
+Using the documentation, W3schools and classes from Rocketseat and from The Net Ninja

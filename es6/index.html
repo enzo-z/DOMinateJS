@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function* genTest(){ 
+            var a = yield "Enzo";
+            var b = yield "Zamora";
+            var c = yield "Anxiety";
+            return a+b+c;           
+            
+        }
+
+        var iterator = genTest();
+        console.log(iterator.next());
+        iterator.next(3);
+        iterator.next(4);
+        console.log(
+         iterator.next(5));
+        
+
+    </script>
+    
+</body>
+</html>

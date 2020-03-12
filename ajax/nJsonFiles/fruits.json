@@ -1,0 +1,6 @@
+{
+   "fruits": [
+    {"nome":"maçã", "cor":"vermelha", "tamanho":"médio"},
+    {"nome":"uva", "cor":"roxa", "tamanho":"pequeno"},
+    {"nome":"melancia", "cor":"verde", "tamanho":"grande"}
+]} 

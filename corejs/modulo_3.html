@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="sla">
+    <button onclick="compareValue()"></button>
+    <p id="errormsg">Oi</p>
+
+
+    <script>
+        function compareValue(){
+            var inpElem = document.getElementById("sla").value;
+            console.log(inpElem);
+            
+            var errormsg = document.getElementById("errormsg");
+            try {
+                if(inpElem == '') throw "Is empty"
+                if(Number(inpElem) < 5) throw "too little";
+                if(Number(inpElem) > 15) throw "too much";
+                if(isNaN(inpElem)) throw "Not a Number";
+            } catch (error) {
+                errormsg.innerHTML = String(error);
+            }
+            finally{
+                document.getElementById("sla").value = "";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

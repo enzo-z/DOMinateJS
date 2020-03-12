@@ -1,0 +1,7 @@
+{
+    "amigos": [
+        {"nome": "Klaus", "idade":18, "bairro":"Botafogo"},
+        {"nome": "Pedro", "idade":19, "bairro":"Taquara"},
+        {"nome": "Polck", "idade":19, "bairro":"Estácio"}
+    ]
+}
