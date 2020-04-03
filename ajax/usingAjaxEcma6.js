@@ -10,6 +10,7 @@ function vanillaPromisesJS(){
             
             //onload é se o browser suporta a Promise
             xhttp.onload = function(){
+                
                 if(xhttp.status == 200){
                     resolve(JSON.parse(xhttp.response));
                 }
@@ -27,16 +28,16 @@ function vanillaPromisesJS(){
     }
 
     // Pegando a sua promise
-    var promise = get("nJsonFiles/amigos.json");
+    var promise = get("./nJsonFiles/amigos.json");
     promise.then( function(responseAmigos) {
-
+        
         console.log(responseAmigos);
-        return get("nJsonFiles/fruits.json");
+        return get("./nJsonFiles/fruits.json");
          
     }).then( function(responseFruits){
 
         console.log(responseFruits);
-        return get("nJsonFiles/medos.json");
+        return get("./nJsonFiles/medos.json");
     
     }).then( function(responseFears){
 
@@ -103,9 +104,9 @@ function generatorAjax(){
         return verifyRequisition(genIterator.next()); //chamei a verifyRequisition sob o generator iterado
     }
     
+    var teste = $.get("nJsonFiles/amigos.json");
+    teste.then(  function() {
+        console.log(teste);
+        
+    }  );
 }
-var teste = $.get("nJsonFiles/amigos.json");
-teste.then(  function() {
-    console.log(teste);
-    
-}  )

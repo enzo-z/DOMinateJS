@@ -2,20 +2,22 @@
 function vanillaJSAjax(){
     var http = new XMLHttpRequest();
     http.onreadystatechange = ()=>{
+        console.log(http);
         if(http.readyState == 4 && http.statusText == 'OK'){
         console.log(http.response);    
         
-        }   
+        }
+           
     }
 
     http.open("GET", "file.json", true);
     http.send();
 }
+
 //JQuery
 function AjaxJQuery(){
 $.get("file.json", function(data){
         console.log(data);
-    
     
     });
 }
