@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/assets/stylesTest.css">
+    <title>TESTANDO</title>
+</head>
+<body>
+    <h1>Você é OTÁRIO, tal de <%= id %></h1>
+    <p>Me disseram que você se chama: <%= data.name %>, possui <%=data.age %> anos.</p>
+    <ul>
+        <% data.fears.forEach( (element)=> { %>
+        <li><%= element %> </li>
+        <% }); %>
+    </ul>
+    <%- include ("partials/testPartial.ejs")%>
+</body>
+</html>
